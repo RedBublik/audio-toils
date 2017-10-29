@@ -1,0 +1,34 @@
+<div ng2FileDrop
+    [ngClass]="{'nv-file-over': hasBaseDropZoneOver}"
+    (fileOver)="fileOverBase($event)"
+    [uploader]="uploader"
+    class="my-drop-zone">
+
+  <h1 class="block-title">
+    Welcome to Audio Toils!
+  </h1>
+  
+  <div class="block-select">
+    <label class="file_upload">
+        <span class="btn-11">upload</span>
+        <input #uploadEl type="file" ng2FileSelect [uploader]="uploader"/>
+    </label>
+  </div>
+  <audio #sound controls></audio>
+ 
+  <div>
+    <angular-tag-cloud
+      [class.hidden]="isError"
+      [data]="data"
+      [width]="options.width"
+      [height]="options.height"
+      (clicked)="logClicked($event)"
+      [overflow]="options.overflow">
+    </angular-tag-cloud>
+    <div [class.hidden]="!isError" class="area">* error *</div>
+  </div>
+</div>
+<app-canvas [hidden]="!showBalls"></app-canvas>
+
+
+

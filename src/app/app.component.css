@@ -1,0 +1,170 @@
+.my-drop-zone {
+	border: dotted 1px #16536e;
+	text-align: center;
+	height: 100%;
+}
+
+.block-title {
+	color: #66f166;
+	margin: 40px 0;
+}
+
+.nv-file-over {
+	background-color: rgb(33, 33, 33);
+	opacity: 0.5;
+}
+
+angular-tag-cloud {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.block-select {
+	padding-bottom: 20px;
+}
+
+.file_upload{
+	display: block;
+	width: 200px;
+	margin: 0 auto;    
+	position: relative;
+	overflow: hidden;
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+}
+.file_upload input[type=file]{
+	position: absolute;
+	top: -24px;
+	left: 0;
+	opacity: 0;
+}
+
+@-webkit-keyframes criss-cross-left {
+	0% {
+		left: -20px;
+	}
+	50% {
+		left: 50%;
+		width: 20px;
+		height: 20px;
+	}
+	100% {
+		left: 50%;
+		width: 375px;
+		height: 375px;
+	}
+}  
+@keyframes criss-cross-left {
+	0% {
+		left: -20px;
+	}
+	50% {
+		left: 50%;
+		width: 20px;
+		height: 20px;
+	}
+	100% {
+		left: 50%;
+		width: 375px;
+		height: 375px;
+	}
+}
+@-webkit-keyframes criss-cross-right {
+	0% {
+		right: -20px;
+	}
+	50% {
+		right: 50%;
+		width: 20px;
+		height: 20px;
+	}
+	100% {
+		right: 50%;
+		width: 375px;
+		height: 375px;
+	}
+}
+@keyframes criss-cross-right {
+	0% {
+		right: -20px;
+	}
+	50% {
+		right: 50%;
+		width: 20px;
+		height: 20px;
+	}
+	100% {
+		right: 50%;
+		width: 375px;
+		height: 375px;
+	}
+}
+.btn-11:before,
+.btn-11:after {
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	z-index: -1;
+}
+.btn-11 {
+	position: relative;
+	cursor: pointer;	
+	color: #66f166;
+	position: relative;
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: 60px;
+	text-decoration: none;    
+	line-height: 60px;    
+	max-width: 250px;
+	text-transform: uppercase;
+	overflow: hidden;
+	border: 1px solid currentColor;
+}
+.btn-11:before, .btn-11:after {
+	position: absolute;
+	top: 50%;
+	content: '';
+	width: 20px;
+	height: 20px;
+	background: #35907b;
+	border-radius: 50%;
+}
+.btn-11:before {
+	left: -20px;
+	-webkit-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+}
+.btn-11:after {
+	right: -20px;
+	-webkit-transform: translate(50%, -50%);
+					transform: translate(50%, -50%);
+}
+.btn-11:hover:before {
+	-webkit-animation: criss-cross-left 0.8s both;
+					animation: criss-cross-left 0.8s both;
+}
+.btn-11:hover:after {
+	-webkit-animation: criss-cross-right 0.8s both;
+					animation: criss-cross-right 0.8s both;
+}
+
+#canvas{
+  position: absolute;
+  -webkit-filter: url("#goo");
+	filter: url("#goo");
+}
+
+
+.area {
+	font-family: 'Gloria Hallelujah', cursive;
+	text-align: center;
+	font-size: 2rem;
+	margin-top: 20px;
+	width: 100%;
+	color: #f99c90;
+}
